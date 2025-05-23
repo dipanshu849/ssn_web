@@ -1,0 +1,48 @@
+.intro {
+  position: relative;
+}
+
+.intro__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(1px);
+  opacity: 0.8;
+}
+
+.intro__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+} */
+
+/* md */
+/* @media (min-width: 768px) {
+} */
+
+/* lg */
+/* @media (min-width: 1024px) {
+  .intro__background img {
+    height: 42rem;
+    object-fit: cover;
+  }
+} */
+
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */
