@@ -1,0 +1,196 @@
+/* .calender {
+} */
+
+.calender__title {
+  font-size: var(--size-2xl);
+  color: var(--color-slate-900);
+  margin-bottom: 0.5rem;
+}
+
+.calender-wrapper {
+  overflow: hidden;
+}
+
+.calender__types {
+  display: flex;
+}
+
+.calender__type {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  font-size: var(--size-sm);
+  color: var(--color-slate-800);
+  cursor: pointer;
+  border: 1px solid var(--color-slate-200);
+}
+
+.calender__time-navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calender__time-navigator-radial {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.calender__time-view-svg {
+  opacity: 0.3;
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  transition: opacity 0.3s;
+}
+
+.calender__time-view-svg:hover {
+  opacity: 0.6;
+}
+
+.calender__types-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.calender__type-content {
+  display: block;
+  flex: 1;
+}
+
+.calender__type-content-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.calender__type-content-item-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--size-sm);
+  background-color: var(--color-slate-200);
+  border: 1px solid var(--color-slate-200);
+  padding: 0.2rem 0.5rem;
+}
+
+/* .calender__type-content-item-description {
+} */
+
+.calender__type-content-item-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.calender__type-content-item-list li {
+  border: 1px solid var(--color-slate-200);
+  padding: 0.5rem;
+  font-size: var(--size-sm);
+  color: var(--color-slate-800);
+  display: flex;
+}
+
+.calender__type-content-item-list li:hover {
+  background-color: var(--color-slate-200);
+}
+
+.calender__type-content-item-list li div:nth-child(1) {
+  flex: 1;
+}
+
+.calender__type-content-item-list li div:nth-child(2) {
+  flex: 2;
+}
+
+.calender__type-content-item-list li div:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-slate-400);
+  margin-right: 0.2rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .calender__title {
+    font-size: var(--size-3xl);
+  }
+  .calender__type {
+    padding: 0.4rem;
+    font-size: var(--size-base);
+  }
+
+  .calender__type-content-item-heading {
+    font-size: var(--size-base);
+  }
+  .calender__type-content-item-list li {
+    font-size: var(--size-base);
+  }
+
+  .calender__time-view-svg {
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {
+} */
+
+/* md */
+/* @media (min-width: 768px) {
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .calender__title {
+    font-size: var(--size-4xl);
+  }
+  .calender__type {
+    padding: 0.4rem;
+    font-size: var(--size-lg);
+  }
+
+  .calender__type-content-item-heading {
+    font-size: var(--size-lg);
+  }
+  .calender__type-content-item-list li {
+    font-size: var(--size-lg);
+  }
+  .calender__type-content-item-list li div:nth-child(2)::before {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .calender__time-view-svg {
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .calender__title {
+    font-size: var(--size-5xl);
+  }
+  .calender__type {
+    padding: 0.4rem;
+    font-size: var(--size-xl);
+  }
+
+  .calender__type-content-item-heading {
+    font-size: var(--size-xl);
+  }
+  .calender__type-content-item-list li {
+    font-size: var(--size-xl);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */

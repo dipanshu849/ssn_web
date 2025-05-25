@@ -298,6 +298,7 @@ button {
 
 a {
   color: var(--color-red-800);
+  text-decoration: none;
 }
 
 strong {

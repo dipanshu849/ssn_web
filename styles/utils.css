@@ -50,6 +50,7 @@
   justify-content: center;
   font-size: var(--size-xxs);
   color: var(--color-slate-600);
+  transition: color 0.3s, border-color 0.3s;
 }
 
 .radial-btn:hover {
