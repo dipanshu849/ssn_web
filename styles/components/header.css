@@ -53,8 +53,12 @@
 }
 
 /* sm */
-/* @media (min-width: 640px) {
-} */
+@media (min-width: 640px) {
+  .header__logo-img {
+    width: 200px;
+    aspect-ratio: auto;
+  }
+}
 
 /* md */
 @media (min-width: 768px) {
@@ -105,6 +109,7 @@
     cursor: pointer;
     font-size: var(--size-sm);
     color: var(--color-slate-600);
+    font-weight: 600;
   }
 
   /* .header__menu-dropdown-item::before {
@@ -145,7 +150,7 @@
   }
 
   .header__logo-img {
-    width: 200px;
+    width: 225px;
     aspect-ratio: auto;
   }
 
