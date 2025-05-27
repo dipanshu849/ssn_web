@@ -53,6 +53,15 @@
   transition: color 0.3s, border-color 0.3s;
 }
 
+.radial-btn.border__bold {
+  border: 2px solid var(--color-slate-400);
+}
+
+.radial-btn.text__bold {
+  font-weight: 600;
+  color: var(--color-slate-900);
+}
+
 .radial-btn:hover,
 .radial-btn.active,
 .radial-btn:focus {

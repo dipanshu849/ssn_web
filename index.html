@@ -26,16 +26,68 @@
               <img src="/logo/logo_7.svg" alt="Logo" class="header__logo-img" />
               <!-- <h1 class="header__logo-text">Barahua Sangipur-Pratapgarh</h1> -->
             </div>
-            <ul class="header__menu">
-              <li><a class="header__link" href="#about">About</a></li>
-              <li><a class="header__link" href="#admissions">Admissions</a></li>
-              <li><a class="header__link" href="#academics">Academics</a></li>
-              <li><a class="header__link" href="#sports">Sports</a></li>
-              <li class="header__line"></li>
-              <li><a class="header__link" href="#clubs">Clubs</a></li>
-              <li><a class="header__link" href="#gallery">Gallery</a></li>
-              <li><a class="header__link" href="#news">News</a></li>
-            </ul>
+            <div class="header__menu-container">
+              <ul class="header__menu">
+                <li><a class="header__link" href="#about">About</a></li>
+                <li>
+                  <a
+                    class="header__link header__menu-dropdown-btn"
+                    href="#admissions"
+                    >Admissions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header__link header__menu-dropdown-btn"
+                    href="#academics"
+                    >Academics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header__link header__menu-dropdown-btn"
+                    href="#sports"
+                    >Sports</a
+                  >
+                </li>
+                <li class="header__line"></li>
+                <li><a class="header__link" href="#gallery">Gallery</a></li>
+                <li><a class="header__link" href="#news">News</a></li>
+              </ul>
+              <div class="header__menu-dropdown-wrapper">
+                <div
+                  class="header__menu-dropdown header__menu-dropdown-admissions"
+                >
+                  <ul class="header__menu-dropdown-list">
+                    <li class="header__menu-dropdown-item">Fee Structure</li>
+                    <li class="header__menu-dropdown-item">
+                      Admission crieria
+                    </li>
+                    <li class="header__menu-dropdown-item">
+                      Admission Process
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="header__menu-dropdown header__menu-dropdown-academics"
+                >
+                  <ul class="header__menu-dropdown-list">
+                    <li class="header__menu-dropdown-item">Curriculum</li>
+                    <li class="header__menu-dropdown-item">Exam schedule</li>
+                    <li class="header__menu-dropdown-item">School dress</li>
+                  </ul>
+                </div>
+                <div class="header__menu-dropdown header__menu-dropdown-sports">
+                  <ul class="header__menu-dropdown-list">
+                    <li class="header__menu-dropdown-item">List of sports</li>
+                    <li class="header__menu-dropdown-item">Coaches</li>
+                    <li class="header__menu-dropdown-item">
+                      Sports facilities
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <button class="header__bars">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,9 +138,66 @@
       Through Modern Education <span> "</span>
     </div>
 
+    <!-- MOBILE NAVIGATION -->
+    <div class="mobile-nav">
+      <span class="mobile-nav__close">
+        <span></span>
+        <span></span>
+      </span>
+      <ul class="mobile-nav__menu">
+        <li><a class="mobile-nav__link" href="#about">About</a></li>
+        <li>
+          <a class="mobile-nav__link" href="">
+            <div>
+              <p class="mobile-nav__link-title">Admissions</p>
+              <div class="mobile-nav__dropdown-wrapper">
+                <ul class="mobile-nav__dropdown-list">
+                  <li class="mobile-nav__dropdown-item">Fee Structure</li>
+                  <li class="mobile-nav__dropdown-item">Admission crieria</li>
+                  <li class="mobile-nav__dropdown-item">Admission Process</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="">
+            <div>
+              <p class="mobile-nav__link-title">Academics</p>
+              <div class="mobile-nav__dropdown-wrapper">
+                <ul class="mobile-nav__dropdown-list">
+                  <li class="mobile-nav__dropdown-item">Curriculum</li>
+                  <li class="mobile-nav__dropdown-item">Exam schedule</li>
+                  <li class="mobile-nav__dropdown-item">School dress</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="">
+            <div>
+              <p class="mobile-nav__link-title">Sports</p>
+              <div class="mobile-nav__dropdown-wrapper">
+                <ul class="mobile-nav__dropdown-list">
+                  <li class="mobile-nav__dropdown-item">List of sports</li>
+                  <li class="mobile-nav__dropdown-item">Coaches</li>
+                  <li class="mobile-nav__dropdown-item">Sports facilities</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li><a class="mobile-nav__link" href="">Gallery</a></li>
+        <li><a class="mobile-nav__link" href="">News</a></li>
+      </ul>
+    </div>
+    <!-- MOBILE NAVIGATION END -->
+
     <main>
       <!-- ABOUT SECTION -->
-      <section class="about container section">
+      <section class="about container section" id="about">
         <div class="about__content">
           <h2 class="about__title">About Us</h2>
           <p class="about__description">

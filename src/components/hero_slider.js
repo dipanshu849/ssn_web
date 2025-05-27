@@ -1,11 +1,11 @@
-import { update } from "three/examples/jsm/libs/tween.module.js";
-
 const hero__img__slider = () => {
   const navigator__btns = document.querySelectorAll(".hero__img-navigator-btn");
   const hero__imgs = document.querySelectorAll(".hero__img");
 
   let current__index = 0;
   let prev__index = 0;
+
+  let intervalID = null;
 
   const update__slider__prev = () => {
     hero__imgs.forEach((img, index) => {
@@ -42,15 +42,15 @@ const hero__img__slider = () => {
 
   navigator__btns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
-      // clearInterval(intervalID);
+      clearInterval(intervalID);
 
       current__index = index;
       update__slider__prev();
-      // auto__slide();
+      auto__slide();
     });
   });
   update__slider();
-  // auto__slide();
+  auto__slide();
 };
 
 export default hero__img__slider;

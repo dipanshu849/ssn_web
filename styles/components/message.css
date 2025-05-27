@@ -5,7 +5,7 @@
 }
 
 .message__container {
-  max-width: 1008px;
+  max-width: 1208px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
