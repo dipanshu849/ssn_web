@@ -53,9 +53,16 @@
   transition: color 0.3s, border-color 0.3s;
 }
 
-.radial-btn:hover {
+.radial-btn:hover,
+.radial-btn.active,
+.radial-btn:focus {
   color: var(--color-slate-900);
   border-color: var(--color-slate-800);
+}
+
+.radial-btn.active {
+  color: var(--color-slate-900);
+  border-color: var(--color-red-800);
 }
 
 .container {

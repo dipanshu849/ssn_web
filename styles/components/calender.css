@@ -41,14 +41,15 @@
 }
 
 .calender__time-view-svg {
-  opacity: 0.3;
+  opacity: 1;
+  color: var(--color-red-800);
   width: var(--size-2xl);
   height: var(--size-2xl);
   transition: opacity 0.3s;
 }
 
 .calender__time-view-svg:hover {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .calender__types-content {
@@ -119,6 +120,7 @@
 @media (min-width: 475px) {
   .calender__title {
     font-size: var(--size-3xl);
+    margin-bottom: 1rem;
   }
   .calender__type {
     padding: 0.4rem;
@@ -150,6 +152,7 @@
 @media (min-width: 1024px) {
   .calender__title {
     font-size: var(--size-4xl);
+    margin-bottom: 2rem;
   }
   .calender__type {
     padding: 0.4rem;
@@ -177,6 +180,7 @@
 @media (min-width: 1280px) {
   .calender__title {
     font-size: var(--size-5xl);
+    margin-bottom: 3rem;
   }
   .calender__type {
     padding: 0.4rem;
