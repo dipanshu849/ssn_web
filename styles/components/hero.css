@@ -1,9 +1,9 @@
 .hero {
   position: relative;
+  /* border: 1px solid red; */
 }
 
 .hero__img-navigator {
-  /* border: 1px solid red; */
   position: absolute;
   bottom: 2%;
   left: 50%;

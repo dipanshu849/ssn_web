@@ -22,6 +22,11 @@
 /* @media (min-width: 1536px) {
 } */
 
+h2,
+h3 {
+  color: var(--color-slate-900);
+}
+
 .btn {
   display: inline-block;
   font-weight: 600;
