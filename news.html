@@ -187,7 +187,7 @@
         </li>
         <li class="mobile-nav__link-line"></li>
         <li><a class="mobile-nav__link" href="gallery.html">Gallery</a></li>
-        <li><a class="mobile-nav__link" href="">News</a></li>
+        <li><a class="mobile-nav__link" href="#news">News</a></li>
       </ul>
     </div>
     <!-- MOBILE NAVIGATION END -->
@@ -196,27 +196,34 @@
       <!-- NEWS -->
       <section class="news container section">
         <h2 class="news__title">News</h2>
+        <!-- WORK LEFT TO HANDLE ACTIVE CLASS IN NAVIGATION -->
         <div class="news__nav-container">
           <div class="news__nav-wrapper">
             <div class="news__nav">
               <ul class="news__nav-menu">
                 <li class="news__nav-item">
-                  <div>
-                    <button><span></span></button>
-                    <p>Achievements</p>
-                  </div>
+                  <a href="#achievements">
+                    <div>
+                      <button><span></span></button>
+                      <p>Achievements</p>
+                    </div>
+                  </a>
                 </li>
                 <li class="news__nav-item">
-                  <div>
-                    <button><span></span></button>
-                    <p>Upcoming events</p>
-                  </div>
+                  <a href="#upcoming-events">
+                    <div>
+                      <button><span></span></button>
+                      <p>Upcoming Events</p>
+                    </div>
+                  </a>
                 </li>
                 <li class="news__nav-item">
-                  <div>
-                    <button><span></span></button>
-                    <p>Competitions</p>
-                  </div>
+                  <a href="#competitions">
+                    <div>
+                      <button><span></span></button>
+                      <p>Competitions</p>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -225,22 +232,28 @@
             <div class="news__nav">
               <ul class="news__nav-menu">
                 <li class="news__nav-item">
-                  <div>
-                    <button><span></span></button>
-                    <p>Special visit</p>
-                  </div>
+                  <a href="#special-visit">
+                    <div>
+                      <button><span></span></button>
+                      <p>Special Visit</p>
+                    </div>
+                  </a>
                 </li>
                 <li class="news__nav-item">
-                  <div>
-                    <button><span></span></button>
-                    <p>Outdoor activities</p>
-                  </div>
+                  <a href="#outdoor-activities">
+                    <div>
+                      <button><span></span></button>
+                      <p>Outdoor Activities</p>
+                    </div>
+                  </a>
                 </li>
                 <li class="news__nav-item">
-                  <div>
-                    <button><span></span></button>
-                    <p>Vacancies</p>
-                  </div>
+                  <a href="#vacancies">
+                    <div>
+                      <button><span></span></button>
+                      <p>Vacancies</p>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -249,49 +262,983 @@
         </div>
         <div class="news__content-container">
           <div class="news__content">
-            <div class="news__subcontent-wrapper">
+            <!-- ACHIEVEMENTS -->
+            <div
+              class="news__subcontent-wrapper news__subcontent-wrapper-achievements"
+              id="achievements"
+            >
               <h3 class="news__subcontent-title">Achievements</h3>
               <div class="news__subcontent">
                 <div class="news__subcontent-card">
-                  <img
-                    class="news__subcontent-card-img"
-                    src="gallery/may__2025/demo__img__1.jpg"
-                    alt=""
-                  />
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+
                   <div class="news__subcontent-card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam veniam culpa unde magnam quasi provident blanditiis
-                    porro sequi debitis soluta suscipit, mollitia repellat
-                    corporis modi, deleniti, eveniet accusantium numquam
-                    voluptas?
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          WEDNESDAY 28 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Physics Challenge Day Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      This year 12 physics students achieve awards
+                    </p>
                   </div>
                 </div>
                 <div class="news__subcontent-card">
-                  <img
-                    class="news__subcontent-card-img"
-                    src="gallery/may__2025/demo__img__1.jpg"
-                    alt=""
-                  />
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
                   <div class="news__subcontent-card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam veniam culpa unde magnam quasi provident blanditiis
-                    porro sequi debitis soluta suscipit, mollitia repellat
-                    corporis modi, deleniti, eveniet accusantium numquam
-                    voluptas?
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          DATE
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          TITLE
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
                   </div>
                 </div>
                 <div class="news__subcontent-card">
-                  <img
-                    class="news__subcontent-card-img"
-                    src="gallery/may__2025/demo__img__1.jpg"
-                    alt=""
-                  />
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
                   <div class="news__subcontent-card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam veniam culpa unde magnam quasi provident blanditiis
-                    porro sequi debitis soluta suscipit, mollitia repellat
-                    corporis modi, deleniti, eveniet accusantium numquam
-                    voluptas?
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          DATE
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          TITLE
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          DATE
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          TITLE
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- UPCOMING EVENTS -->
+            <div
+              class="news__subcontent-wrapper news__subcontent-wrapper-upcomingevents"
+              id="upcoming-events"
+            >
+              <h3 class="news__subcontent-title">Upcoming Events</h3>
+              <div class="news__subcontent">
+                <div class="news__subcontent-card-upcoming">
+                  <div class="news__subcontent-card-upcoming-description">
+                    <div
+                      class="news__subcontent-card-upcoming-description-preview"
+                    >
+                      <div
+                        class="news__subcontent-card-upcoming-description-title-wrapper"
+                      >
+                        <h4
+                          class="news__subcontent-card-upcoming-description-subtitle"
+                        >
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p
+                          class="news__subcontent-card-upcoming-description-title"
+                        >
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-upcoming-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p
+                      class="news__subcontent-card-upcoming-description-content"
+                    >
+                      Not Avaliable
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card-upcoming">
+                  <div class="news__subcontent-card-upcoming-description">
+                    <div
+                      class="news__subcontent-card-upcoming-description-preview"
+                    >
+                      <div
+                        class="news__subcontent-card-upcoming-description-title-wrapper"
+                      >
+                        <h4
+                          class="news__subcontent-card-upcoming-description-subtitle"
+                        >
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p
+                          class="news__subcontent-card-upcoming-description-title"
+                        >
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-upcoming-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p
+                      class="news__subcontent-card-upcoming-description-content"
+                    >
+                      Description
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- COMPETITIONS -->
+            <div
+              class="news__subcontent-wrapper news__subcontent-wrapper-competitions"
+              id="competitions"
+            >
+              <h3 class="news__subcontent-title">Competitions</h3>
+              <div class="news__subcontent">
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          DATE
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          TITLE
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          DATE
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          TITLE
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          DATE
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          TITLE
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SPECIAL VISIT -->
+            <div
+              class="news__subcontent-wrapper news__subcontent-wrapper-specialvisit"
+              id="special-visit"
+            >
+              <h3 class="news__subcontent-title">Special Visit</h3>
+              <div class="news__subcontent">
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- OUTDOOR ACTIVITIES -->
+            <div
+              class="news__subcontent-wrapper news__subcontent-wrapper-outdoorActivities"
+              id="outdoor-activities"
+            >
+              <h3 class="news__subcontent-title">Outdoor Activities</h3>
+              <div class="news__subcontent">
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- VACANCIES -->
+            <div
+              class="news__subcontent-wrapper news__subcontent-wrapper-vacancies"
+              id="vacancies"
+            >
+              <h3 class="news__subcontent-title">Vacancies</h3>
+              <div class="news__subcontent">
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
+                  </div>
+                </div>
+                <div class="news__subcontent-card">
+                  <div class="news__subcontent-card-img-wrapper">
+                    <img
+                      class="news__subcontent-card-img"
+                      src="gallery/may__2025/demo__img__1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="news__subcontent-card-description">
+                    <div class="news__subcontent-card-description-preview">
+                      <div
+                        class="news__subcontent-card-description-title-wrapper"
+                      >
+                        <h4 class="news__subcontent-card-description-subtitle">
+                          THURSDAY 29 MAY 2025
+                        </h4>
+                        <p class="news__subcontent-card-description-title">
+                          Home School Diary Competition
+                        </p>
+                      </div>
+                      <button
+                        class="news__subcontent-card-description-view-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="currentColor"
+                          class="news__subcontent-view-svg"
+                        >
+                          <path
+                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="news__subcontent-card-description-content">
+                      Description
+                    </p>
                   </div>
                 </div>
               </div>

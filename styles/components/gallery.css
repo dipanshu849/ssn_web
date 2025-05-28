@@ -11,7 +11,6 @@
 .gallery__nav {
   position: relative;
   margin-top: 2rem;
-  /* border: 1px solid red; */
 }
 
 .gallery__nav::before {
@@ -53,11 +52,12 @@
   text-align: center;
 }
 
-.gallery__nav-item div button:hover {
+.gallery__nav-item div:hover button {
   border: none;
 }
 
-.gallery__nav-item div button:hover span {
+.gallery__nav-item div:hover button span,
+.gallery__nav-item div.active button span {
   display: inline-block;
   background-color: var(--color-red-800);
   width: 6px;
@@ -68,6 +68,12 @@
 .gallery__nav-item div p {
   font-size: var(--size-sm);
   color: var(--color-slate-800);
+}
+
+.gallery__nav-item div:hover p,
+.gallery__nav-item div.active p {
+  font-size: var(--size-sm);
+  color: var(--color-red-800);
 }
 
 .gallery__nav-item:nth-child(2) div p {
@@ -100,6 +106,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
+  max-height: 40dvh;
+  overflow-y: auto;
 }
 
 .gallery__content img {
@@ -150,11 +158,17 @@
     font-size: var(--size-base);
   }
 
+  .gallery__nav-item div:hover p,
+  .gallery__nav-item div.active p {
+    font-size: var(--size-base);
+  }
+
   .gallery__nav-item:nth-child(2) div p {
     transform: translateY(-175%);
   }
 
-  .gallery__nav-item div button:hover span {
+  .gallery__nav-item div:hover button span,
+  .gallery__nav-item div.active button span {
     width: 10px;
     height: 10px;
   }
@@ -217,15 +231,22 @@
     font-size: var(--size-lg);
   }
 
+  .gallery__nav-item div:hover p,
+  .gallery__nav-item div.active p {
+    font-size: var(--size-lg);
+  }
+
   .gallery__nav-item:nth-child(2) div p {
     transform: translateY(-180%);
   }
 
-  .gallery__nav-item div button:hover span {
+  .gallery__nav-item div:hover button span,
+  .gallery__nav-item div.active button span {
     width: 15px;
     height: 15px;
   }
 
+  /* content */
   .gallery__content-wrapper {
     margin-top: 2rem;
   }
@@ -273,11 +294,17 @@
     font-size: var(--size-xl);
   }
 
+  .gallery__nav-item div:hover p,
+  .gallery__nav-item div.active p {
+    font-size: var(--size-xl);
+  }
+
   .gallery__nav-item:nth-child(2) div p {
     transform: translateY(-197%);
   }
 
-  .gallery__nav-item div button:hover span {
+  .gallery__nav-item div:hover button span,
+  .gallery__nav-item div.active button span {
     width: 20px;
     height: 20px;
   }
