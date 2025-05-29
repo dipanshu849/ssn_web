@@ -3,7 +3,7 @@ const mobile__nav = () => {
   const mobileNavCloseBtn = document.querySelector(".mobile-nav__close");
 
   const mobileNav = document.querySelector(".mobile-nav");
-  const mobileNavLinks = document.querySelectorAll(".mobile-nav__link");
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav__link.close");
 
   mobileNavLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
