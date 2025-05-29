@@ -11,8 +11,9 @@ import "../../styles/utils.css";
 import hero__img__slider from "../components/hero_slider.js";
 import header__dropdown from "../components/header__dropdown.js";
 import mobile__nav from "../components/mobile-nav.js";
+import lazy__loading from "../components/lazy-loading.js";
 
 hero__img__slider();
-
 header__dropdown();
 mobile__nav();
+lazy__loading();
