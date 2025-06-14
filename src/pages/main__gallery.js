@@ -14,11 +14,15 @@ import mobile__nav from "../components/mobile-nav.js";
 import lazy__loading from "../components/lazy-loading.js";
 import getNSetGalleryImgs from "../backend/gallery.js";
 import galleryNavMenu from "./galleryNavController.js";
+import getNsetHeaderLinks from "../backend/header.js";
+import getNsetFooterData from "../backend/footer.js";
 
 const handleData = () => {
-  getNSetGalleryImgs().then(() => {
-    console.log("Done");
-  });
+  Promise.all([
+    getNSetGalleryImgs(),
+    getNsetHeaderLinks(),
+    getNsetFooterData(),
+  ]).then(() => {});
 };
 
 hero__img__slider();

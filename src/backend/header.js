@@ -59,7 +59,9 @@ const getNsetHeaderLinks = () => {
         } else if (file.name.includes("schoolFacilities")) {
           schoolFacilitiesLink[0].href = data.publicUrl;
           schoolFacilitiesLink[1].href = data.publicUrl;
-          featuredLink.href = data.publicUrl;
+          if (featuredLink) {
+            featuredLink.href = data.publicUrl;
+          }
         } else if (file.name.includes("listOfSports")) {
           listOfSportsLink[0].href = data.publicUrl;
           listOfSportsLink[1].href = data.publicUrl;

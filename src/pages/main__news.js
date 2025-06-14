@@ -20,7 +20,11 @@ header__dropdown();
 mobile__nav();
 
 async function handleData() {
-  getNSetNewsImgs();
+  Promise.all([
+    getNSetNewsImgs(),
+    getNsetHeaderLinks(),
+    getNsetFooterData(),
+  ]).then(() => {});
 }
 
 handleData();

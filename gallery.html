@@ -14,6 +14,7 @@
     <!-- INTRO - {HEADER & HERO} -->
     <div class="intro">
       <div class="intro__content">
+        <!-- HEADER -->
         <header class="header">
           <nav class="header__content container">
             <div class="header__logo">
@@ -52,7 +53,9 @@
                   >
                 </li>
                 <li class="header__line"></li>
-                <li><a class="header__link" href="#gallery">Gallery</a></li>
+                <li>
+                  <a class="header__link" href="gallery.html">Gallery</a>
+                </li>
                 <li><a class="header__link" href="news.html">News</a></li>
               </ul>
               <div class="header__menu-dropdown-wrapper">
@@ -60,12 +63,14 @@
                   class="header__menu-dropdown header__menu-dropdown-admissions"
                 >
                   <ul class="header__menu-dropdown-list">
-                    <li class="header__menu-dropdown-item">Fee Structure</li>
-                    <li class="header__menu-dropdown-item">
-                      Admission crieria
+                    <li class="header__menu-dropdown-item fee-structure">
+                      <a href="" target="_blank">Fee Structure</a>
                     </li>
-                    <li class="header__menu-dropdown-item">
-                      Admission Process
+                    <li class="header__menu-dropdown-item admission-criteria">
+                      <a href="" target="_blank">Admission crieria</a>
+                    </li>
+                    <li class="header__menu-dropdown-item admission-process">
+                      <a href="" target="_blank">Admission Process</a>
                     </li>
                   </ul>
                 </div>
@@ -73,17 +78,27 @@
                   class="header__menu-dropdown header__menu-dropdown-academics"
                 >
                   <ul class="header__menu-dropdown-list">
-                    <li class="header__menu-dropdown-item">Curriculum</li>
-                    <li class="header__menu-dropdown-item">Exam schedule</li>
-                    <li class="header__menu-dropdown-item">School dress</li>
+                    <li class="header__menu-dropdown-item curriculum">
+                      <a href="" target="_blank">Curriculum</a>
+                    </li>
+                    <li class="header__menu-dropdown-item exam-schedule">
+                      <a href="" target="_blank">Exam schedule</a>
+                    </li>
+                    <li class="header__menu-dropdown-item school-dress">
+                      <a href="" target="_blank">School dress</a>
+                    </li>
+                    <li class="header__menu-dropdown-item school-facilities">
+                      <a href="" target="_blank">School facilities</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="header__menu-dropdown header__menu-dropdown-sports">
                   <ul class="header__menu-dropdown-list">
-                    <li class="header__menu-dropdown-item">List of sports</li>
-                    <li class="header__menu-dropdown-item">Coaches</li>
-                    <li class="header__menu-dropdown-item">
-                      Sports facilities
+                    <li class="header__menu-dropdown-item list-of-sports">
+                      <a href="" target="_blank">List of sports</a>
+                    </li>
+                    <li class="header__menu-dropdown-item sports-facilities">
+                      <a href="" target="_blank">Sports facilities</a>
                     </li>
                   </ul>
                 </div>
@@ -107,11 +122,12 @@
           </nav>
           <div class="header__background"></div>
         </header>
+        <!-- HERO -->
         <article class="hero" style="position: absolute">
           <div class="hero__img-navigator">
-            <button class="hero__img-navigator-btn radial-btn">1</button>
-            <button class="hero__img-navigator-btn radial-btn">2</button>
-            <button class="hero__img-navigator-btn radial-btn">3</button>
+            <!-- <button class="hero__img-navigator-btn radial-btn">1</button>
+                <button class="hero__img-navigator-btn radial-btn">2</button>
+                <button class="hero__img-navigator-btn radial-btn">3</button> -->
           </div>
           <div class="hero__img-container">
             <img
@@ -145,52 +161,74 @@
         <span></span>
       </span>
       <ul class="mobile-nav__menu">
-        <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
         <li>
-          <a class="mobile-nav__link" href="">
-            <div>
-              <p class="mobile-nav__link-title">Admissions</p>
-              <div class="mobile-nav__dropdown-wrapper">
-                <ul class="mobile-nav__dropdown-list">
-                  <li class="mobile-nav__dropdown-item">Fee Structure</li>
-                  <li class="mobile-nav__dropdown-item">Admission crieria</li>
-                  <li class="mobile-nav__dropdown-item">Admission Process</li>
-                </ul>
-              </div>
-            </div>
-          </a>
+          <a class="mobile-nav__link close" href="index.html#about">About</a>
         </li>
-        <li>
-          <a class="mobile-nav__link" href="">
-            <div>
-              <p class="mobile-nav__link-title">Academics</p>
-              <div class="mobile-nav__dropdown-wrapper">
-                <ul class="mobile-nav__dropdown-list">
-                  <li class="mobile-nav__dropdown-item">Curriculum</li>
-                  <li class="mobile-nav__dropdown-item">Exam schedule</li>
-                  <li class="mobile-nav__dropdown-item">School dress</li>
-                </ul>
-              </div>
+        <li class="mobile-nav__link">
+          <!-- <a  href=""> -->
+          <div>
+            <p class="mobile-nav__link-title">Admissions</p>
+            <div class="mobile-nav__dropdown-wrapper">
+              <ul class="mobile-nav__dropdown-list">
+                <li class="mobile-nav__dropdown-item fee-structure">
+                  <a href="" target="_blank"> Fee Structure</a>
+                </li>
+                <li class="mobile-nav__dropdown-item admission-criteria">
+                  <a href="" target="_blank">Admission criteria</a>
+                </li>
+                <li class="mobile-nav__dropdown-item admission-process">
+                  <a href="" target="_blank">Admission Process</a>
+                </li>
+              </ul>
             </div>
-          </a>
+          </div>
+          <!-- </a> -->
         </li>
-        <li>
-          <a class="mobile-nav__link" href="">
-            <div>
-              <p class="mobile-nav__link-title">Sports</p>
-              <div class="mobile-nav__dropdown-wrapper">
-                <ul class="mobile-nav__dropdown-list">
-                  <li class="mobile-nav__dropdown-item">List of sports</li>
-                  <li class="mobile-nav__dropdown-item">Coaches</li>
-                  <li class="mobile-nav__dropdown-item">Sports facilities</li>
-                </ul>
-              </div>
+        <li class="mobile-nav__link">
+          <!-- <a  href=""> -->
+          <div>
+            <p class="mobile-nav__link-title">Academics</p>
+            <div class="mobile-nav__dropdown-wrapper">
+              <ul class="mobile-nav__dropdown-list">
+                <li class="mobile-nav__dropdown-item curriculum">
+                  <a href="" target="_blank">Curriculum</a>
+                </li>
+                <li class="mobile-nav__dropdown-item exam-schedule">
+                  <a href="" target="_blank">Exam schedule</a>
+                </li>
+                <li class="mobile-nav__dropdown-item school-dress">
+                  <a href="" target="_blank">School dress</a>
+                </li>
+                <li class="mobile-nav__dropdown-item school-facilities">
+                  <a href="" target="_blank">School facilities</a>
+                </li>
+              </ul>
             </div>
-          </a>
+          </div>
+          <!-- </a> -->
+        </li>
+        <li class="mobile-nav__link">
+          <!-- <a  href=""> -->
+          <div>
+            <p class="mobile-nav__link-title">Sports</p>
+            <div class="mobile-nav__dropdown-wrapper">
+              <ul class="mobile-nav__dropdown-list">
+                <li class="mobile-nav__dropdown-item list-of-sports">
+                  <a href="" target="_blank">List of sports</a>
+                </li>
+                <li class="mobile-nav__dropdown-item sports-facilities">
+                  <a href="" target="_blank">Sports facilities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- </a> -->
         </li>
         <li class="mobile-nav__link-line"></li>
-        <li><a class="mobile-nav__link" href="#gallery">Gallery</a></li>
-        <li><a class="mobile-nav__link" href="news.html">News</a></li>
+        <li>
+          <a class="mobile-nav__link close" href="gallery.html">Gallery</a>
+        </li>
+        <li><a class="mobile-nav__link close" href="news.html">News</a></li>
       </ul>
     </div>
     <!-- MOBILE NAVIGATION END -->
@@ -235,7 +273,7 @@
           </div>
           <div class="footer__social-media-wrapper">
             <div class="footer__social-media footer__social-media-fb">
-              <a href=""
+              <a href="" class="facebook-link"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -251,7 +289,7 @@
               </a>
             </div>
             <div class="footer__social-media footer__social-media-ig">
-              <a href="">
+              <a href="" class="instagram-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -267,7 +305,7 @@
               </a>
             </div>
             <div class="footer__social-media footer__social-media-yt">
-              <a href="">
+              <a href="" class="youtube-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -286,32 +324,26 @@
         </div>
         <hr class="footer__hr-line" />
         <div class="footer__body">
-          <!-- <div class="footer__map-wrapper"></div> -->
           <div class="footer__contact-section">
             <h3 class="footer__contact-section-title">Contact Us</h3>
             <div class="footer__contact-section-content">
               <p class="footer__contact-section-address">
                 7165 Burton Avenue <br />Rohnert Park, CA <br />94928
               </p>
-              <div class="footer__contact-section-pn-container">
-                <p class="footer__contact-section-pn">P: 93-abc-xyz</p>
-                <p class="footer__contact-section-pn">F: 91-uvw-mno</p>
-              </div>
+              <div class="footer__contact-section-pn-container"></div>
             </div>
           </div>
           <div class="footer__quick-links">
             <ul class="footer__quick-links-list">
               <li class="footer__quick-links-item">
-                <a href=""> Family Resources</a>
+                <a href="" class="family-resources-link" target="_blank">
+                  Family Resources</a
+                >
               </li>
               <li class="footer__quick-links-item">
-                <a href=""> School Calender</a>
-              </li>
-              <li class="footer__quick-links-item">
-                <a href=""> Enrollment Information</a>
-              </li>
-              <li class="footer__quick-links-item">
-                <a href=""> School Locations Map</a>
+                <a href="" class="school-location-link" target="_blank">
+                  School Locations Map</a
+                >
               </li>
             </ul>
           </div>
