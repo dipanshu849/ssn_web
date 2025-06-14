@@ -3,6 +3,8 @@ const calender__type__navigator = () => {
   const athletics__btn = document.querySelector(".calender__type-athletics");
   const circulars__btn = document.querySelector(".calender__type-circulars");
 
+  const calendar = document.querySelector("#calender__time-navigator");
+
   const table__contents = document.querySelectorAll(".calender__type-content");
 
   const type__btn = document.querySelectorAll(".calender__type");
@@ -23,10 +25,13 @@ const calender__type__navigator = () => {
   const update__current__index = (type) => {
     if (type == "events") {
       current__index = 0;
+      calendar.disabled = false;
     } else if (type == "athletics") {
       current__index = 1;
+      calendar.disabled = false;
     } else {
       current__index = 2;
+      calendar.disabled = true;
     }
 
     update__calender__table();

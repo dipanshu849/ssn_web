@@ -110,6 +110,42 @@ h3 {
 .section {
   margin-top: 5rem;
 }
+/* 
+.loading {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(211, 211, 211);
+  border-radius: 6px;
+}
+
+.loading__child {
+  background-image: linear-gradient(
+    to left,
+    rgba(251, 251, 251, 0.05),
+    rgba(251, 251, 251, 0.3),
+    rgba(251, 251, 251, 0.6),
+    rgba(251, 251, 251, 0.3),
+    rgba(251, 251, 251, 0.05)
+  );
+  position: absolute;
+  width: 50%;
+  left: -50%;
+  height: 100%;
+  animation: move 2s infinite linear;
+  transform: skewX(-20deg);
+  filter: blur(1px);
+}
+
+@keyframes move {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 150%;
+  }
+} */
 
 .loading {
   filter: blur(40px) grayscale(100%);

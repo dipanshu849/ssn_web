@@ -9,7 +9,7 @@ const hero__img__slider = () => {
 
   const update__slider__prev = () => {
     hero__imgs.forEach((img, index) => {
-      if (index == prev__index && current__index !== prev__index) {
+      if (index == prev__index && current__index != prev__index) {
         img.classList.add("inactive");
         prev__index = current__index;
         setTimeout(update__slider, 1500);
@@ -21,11 +21,23 @@ const hero__img__slider = () => {
 
   const update__slider = () => {
     hero__imgs.forEach((img, index) => {
-      img.classList.toggle("active", index === current__index);
+      // img.classList.toggle("active", index === current__index);
+      if (index == current__index) {
+        img.classList.add("active", index == current__index);
+      } else {
+        img.classList.remove("active", index != current__index);
+      }
     });
 
     navigator__btns.forEach((btn, index) => {
-      btn.classList.toggle("active", index === current__index);
+      // btn.classList.toggle("active", index === current__index);
+      // btn.classList.add("active", index == current__index);
+      // btn.classList.remove("active", index != current__index);
+      if (index == current__index) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
     });
   };
 
