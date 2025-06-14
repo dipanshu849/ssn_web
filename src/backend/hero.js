@@ -4,6 +4,7 @@ const getNSetHeroData = async () => {
   let imgCounter = 0;
   const heroImgContainer = document.querySelector(".hero__img-container");
   const heroImgNavigator = document.querySelector(".hero__img-navigator");
+  let isFirstImage = true;
 
   return new Promise((resolve, reject) => {
     // ------------------------------------------------------------------------- FUNCTIONS
@@ -37,17 +38,23 @@ const getNSetHeroData = async () => {
           "hero__img-navigator-btn",
           "radial-btn"
         );
+        if (isFirstImage) {
+          heroNavigatorItem.classList.add("active");
+        }
         heroNavigatorItem.innerHTML = `${imgCounter}`;
         heroImgNavigator.appendChild(heroNavigatorItem);
 
         /// - IMGS
         const heroImg = document.createElement("img");
-        heroImg.classList.add("hero__img");
+        if (isFirstImage) {
+          heroImg.classList.add("hero__img", "active");
+          isFirstImage = false;
+        } else {
+          heroImg.classList.add("hero__img");
+        }
         heroImg.src = data.publicUrl;
         heroImg.alt = "School students studying and enjoying themselves";
         heroImgContainer.appendChild(heroImg);
-
-        console.log("In Hero");
       });
     });
     resolve();

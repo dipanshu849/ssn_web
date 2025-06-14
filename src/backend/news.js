@@ -33,6 +33,9 @@ const getNSetNewsImgs = () => {
           .getPublicUrl(row.path);
 
         const type = row.path.split("/")[1].toLowerCase();
+        if (!allTypes.includes(type)) {
+          return;
+        }
         displayedType.push(type);
         const cardContainer = document.querySelector(`
             .news__subcontent-wrapper-${type} .news__subcontent`);

@@ -13,8 +13,9 @@ import header__dropdown from "../components/header__dropdown.js";
 import mobile__nav from "../components/mobile-nav.js";
 import lazy__loading from "../components/lazy-loading.js";
 import getNSetNewsImgs from "../backend/news.js";
-
-hero__img__slider();
+import getNSetHeroData from "../backend/hero.js";
+import getNsetHeaderLinks from "../backend/header.js";
+import getNsetFooterData from "../backend/footer.js";
 
 header__dropdown();
 mobile__nav();
@@ -24,7 +25,10 @@ async function handleData() {
     getNSetNewsImgs(),
     getNsetHeaderLinks(),
     getNsetFooterData(),
-  ]).then(() => {});
+    getNSetHeroData(),
+  ]).then(() => {
+    hero__img__slider();
+  });
 }
 
 handleData();
