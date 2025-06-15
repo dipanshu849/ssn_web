@@ -23,9 +23,9 @@ const hero__img__slider = () => {
     hero__imgs.forEach((img, index) => {
       // img.classList.toggle("active", index === current__index);
       if (index == current__index) {
-        img.classList.add("active", index == current__index);
+        img.classList.add("active");
       } else {
-        img.classList.remove("active", index != current__index);
+        img.classList.remove("active");
       }
     });
 

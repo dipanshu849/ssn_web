@@ -11,21 +11,22 @@ import "../../styles/utils.css";
 import hero__img__slider from "../components/hero_slider.js";
 import header__dropdown from "../components/header__dropdown.js";
 import mobile__nav from "../components/mobile-nav.js";
-import lazy__loading from "../components/lazy-loading.js";
 import getNSetGalleryImgs from "../backend/gallery.js";
-import galleryNavMenu from "./galleryNavController.js";
 import getNsetHeaderLinks from "../backend/header.js";
 import getNsetFooterData from "../backend/footer.js";
+import getNSetHeroData from "../backend/hero.js";
 
 const handleData = () => {
   Promise.all([
     getNSetGalleryImgs(),
     getNsetHeaderLinks(),
     getNsetFooterData(),
-  ]).then(() => {});
+    getNSetHeroData(),
+  ]).then(() => {
+    hero__img__slider();
+  });
 };
 
-hero__img__slider();
 header__dropdown();
 mobile__nav();
 

@@ -11,7 +11,6 @@ import "../../styles/utils.css";
 import hero__img__slider from "../components/hero_slider.js";
 import header__dropdown from "../components/header__dropdown.js";
 import mobile__nav from "../components/mobile-nav.js";
-import lazy__loading from "../components/lazy-loading.js";
 import getNSetNewsImgs from "../backend/news.js";
 import getNSetHeroData from "../backend/hero.js";
 import getNsetHeaderLinks from "../backend/header.js";

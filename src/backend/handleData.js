@@ -10,8 +10,36 @@ import getNsetDataForFeaturedSlider from "./featuredSlider";
 import featured__carousel from "../components/featured_slider.js";
 import getNsetHeaderLinks from "./header.js";
 import getNsetFooterData from "./footer.js";
+import { supabase } from "../supabaseClient";
 
-const handleData = async () => {
+async function fetchViewCounterFromSupabase() {
+  return new Promise(async (resolve, reject) => {
+    const { data, error } = await supabase.from("meta-data").select("views");
+
+    if (error) {
+      reject(error);
+    }
+    resolve(data);
+  });
+}
+
+async function updateViewCounterInSupabase() {
+  fetchViewCounterFromSupabase().then(async (obj) => {
+    console.log(typeof obj[0].views);
+    console.log(obj[0].views);
+    console.log(obj[0].views + 1);
+    const { error } = await supabase
+      .from("meta-data")
+      .update({ views: obj[0].views + 1 })
+      .eq("id", 1);
+
+    if (error) {
+      console.log(error);
+    }
+  });
+}
+
+const handleData = () => {
   Promise.all([
     getNSetAboutData(),
     getNSetMsgData(),
@@ -27,6 +55,7 @@ const handleData = async () => {
     featured__carousel();
     hero__img__slider();
     lazy__loading();
+    updateViewCounterInSupabase();
   });
 };
 
