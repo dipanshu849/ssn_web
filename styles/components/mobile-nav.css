@@ -106,7 +106,8 @@
   color: var(--color-red-800);
 }
 
-.mobile-nav__link:hover .mobile-nav__dropdown-list {
+.mobile-nav__link:hover .mobile-nav__dropdown-list,
+.mobile-nav__link:focus .mobile-nav__dropdown-list {
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
