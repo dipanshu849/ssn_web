@@ -32,17 +32,17 @@ h3 {
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -0.05em;
-  background-color: var(--color-rose-600);
-  color: var(--color-slate-50);
+  background-color: var(--color-slate-100);
+  color: var(--color-red-800);
   padding: 0.5em 1em;
   border-radius: 6px;
-  box-shadow: 2px 2px 15px oklch(0.586 0.253 17.585);
+  /* box-shadow: 2px 2px 15px oklch(0.586 0.253 17.585); */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 3px 8px 15px oklch(0.586 0.253 17.585);
+  box-shadow: 3px 8px 15px oklch(0.444 0.177 26.899);
 }
 
 .radial-btn {

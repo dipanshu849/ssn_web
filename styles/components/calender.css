@@ -131,6 +131,8 @@
 }
 
 .calender__type-content-item-list.ciculars {
+  max-height: 168px;
+  overflow-y: auto;
 }
 
 .calender__type-content-item-list.ciculars li * {
@@ -144,19 +146,20 @@
 }
 
 .calender__type-content-date.circulars {
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+  outline: 1px solid var(--color-slate-400);
 }
 
-.calender__type-content-name.circulars {
-}
+/* .calender__type-content-name.circulars {
+} */
 
 .calender__type-content-link.circulars {
-  border-left: 2px solid var(--color-slate-400);
+  overflow: hidden;
 }
 
-.calender__type-content-link.circulars a {
-}
+/* .calender__type-content-link.circulars a {
+} */
 
 /* xs */
 @media (min-width: 475px) {
@@ -204,9 +207,15 @@
   .calender__type-content-item-heading {
     font-size: var(--size-lg);
   }
+
+  .calender__type-content-item-list.ciculars {
+    max-height: 280px;
+  }
+
   .calender__type-content-item-list li {
     font-size: var(--size-lg);
   }
+
   .calender__type-content-item-list li div:nth-child(2)::before {
     width: 0.6rem;
     height: 0.6rem;

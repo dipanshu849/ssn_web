@@ -25,9 +25,6 @@ async function fetchViewCounterFromSupabase() {
 
 async function updateViewCounterInSupabase() {
   fetchViewCounterFromSupabase().then(async (obj) => {
-    console.log(typeof obj[0].views);
-    console.log(obj[0].views);
-    console.log(obj[0].views + 1);
     const { error } = await supabase
       .from("meta-data")
       .update({ views: obj[0].views + 1 })

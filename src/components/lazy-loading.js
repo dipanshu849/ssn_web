@@ -16,7 +16,6 @@ const lazy__loading = () => {
   lazy__imgs.forEach((img) => {
     observer.observe(img);
   });
-  console.log("In Lazy loading");
 };
 
 export default lazy__loading;

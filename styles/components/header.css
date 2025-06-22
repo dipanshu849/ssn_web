@@ -98,14 +98,14 @@
     gap: 1rem;
   }
 
-  .header__menu-dropdown-item {
+  .header__menu-dropdown-item a {
     cursor: pointer;
     font-size: var(--size-xs);
     color: var(--color-slate-600);
     font-weight: 600;
   }
 
-  .header__menu-dropdown-item:hover {
+  .header__menu-dropdown-item:hover a {
     color: var(--color-red-800);
   }
 

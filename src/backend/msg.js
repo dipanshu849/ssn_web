@@ -1,7 +1,7 @@
 import { supabase } from "../supabaseClient";
 
 const getNSetMsgData = async () => {
-  const msgSection = document.querySelector(".message__container");
+  const msgSection = document.querySelectorAll(".message__container");
 
   return new Promise((resolve, reject) => {
     // ------------------------------------------------------------------------- FUNCTIONS
@@ -31,20 +31,22 @@ const getNSetMsgData = async () => {
     ///
 
     getData().then((imgs) => {
-      // imgs.forEach((img, index) => {
-      const img = imgs[0];
-      if (img.name == ".emptyFolderPlaceholder") {
-        img = imgs[1];
-      }
+      let counter = 0;
+      imgs.forEach((img, index) => {
+        if (img.name == ".emptyFolderPlaceholder") {
+          return;
+        }
 
-      const { data } = supabase.storage
-        .from("home")
-        .getPublicUrl("msg/" + img.name);
+        const { data } = supabase.storage
+          .from("home")
+          .getPublicUrl("msg/" + img.name);
 
-      const msgItem = document.createElement("div");
-      msgItem.classList.add("message__img-wrapper");
-      msgItem.innerHTML = `<img class="message__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school principal" />`;
-      msgSection.appendChild(msgItem);
+        const msgItem = document.createElement("div");
+        msgItem.classList.add("message__img-wrapper");
+        msgItem.innerHTML = `<img class="message__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school principal" />`;
+        msgSection[counter].appendChild(msgItem);
+        counter++;
+      });
 
       // getImgText().then((data) => {
       //   data.forEach((row) => {
