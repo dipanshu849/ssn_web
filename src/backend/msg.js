@@ -20,9 +20,27 @@ const getNSetMsgData = async () => {
 
     getData().then((imgs) => {
       let counter = 0;
-      imgs.forEach((img, index) => {
+      // imgs.forEach((img, index) => {
+      //   if (img.name == ".emptyFolderPlaceholder") {
+      //     return;
+      //   }
+
+      //   const { data } = supabase.storage
+      //     .from("home")
+      //     .getPublicUrl("msg/" + img.name);
+
+      //   const msgItem = document.createElement("div");
+      //   msgItem.classList.add("message__img-wrapper");
+      //   msgItem.innerHTML = `<img class="message__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school principal" />`;
+      //   msgSection[counter].appendChild(msgItem);
+      //   counter++;
+      //   if (counter == 2) {
+      //     resolve();
+      //   }
+      // });
+      for (const img of imgs) {
         if (img.name == ".emptyFolderPlaceholder") {
-          return;
+          continue;
         }
 
         const { data } = supabase.storage
@@ -35,9 +53,10 @@ const getNSetMsgData = async () => {
         msgSection[counter].appendChild(msgItem);
         counter++;
         if (counter == 2) {
-          resolve();
+          break;
         }
-      });
+      }
+      resolve();
     });
   });
 };

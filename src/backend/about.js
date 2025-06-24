@@ -21,9 +21,25 @@ const getNSetAboutData = async () => {
     ///
 
     getData().then((imgs) => {
-      imgs.forEach((img, index) => {
+      // imgs.forEach((img, index) => {
+      //   if (img.name == ".emptyFolderPlaceholder") {
+      //     return;
+      //   }
+
+      //   const { data } = supabase.storage
+      //     .from("home")
+      //     .getPublicUrl("about/" + img.name);
+
+      //   const aboutItem = document.createElement("div");
+      //   aboutItem.classList.add("about__img-wrapper");
+      //   aboutItem.innerHTML = `<img class="about__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school" />`;
+      //   aboutSection.appendChild(aboutItem);
+
+      //   resolve();
+      // });
+      for (const img of imgs) {
         if (img.name == ".emptyFolderPlaceholder") {
-          return;
+          continue;
         }
 
         const { data } = supabase.storage
@@ -34,9 +50,9 @@ const getNSetAboutData = async () => {
         aboutItem.classList.add("about__img-wrapper");
         aboutItem.innerHTML = `<img class="about__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school" />`;
         aboutSection.appendChild(aboutItem);
-
-        resolve();
-      });
+        break;
+      }
+      resolve();
     });
   });
 };
