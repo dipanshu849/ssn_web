@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
       rel="stylesheet"
     />
-    <title>Server-News</title>
-    <script type="module" crossorigin src="/assets/news-BoIFGIqK.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/lazy-loading-LwtpV54d.js">
-    <link rel="stylesheet" crossorigin href="/assets/lazy-loading-CNdm-g7L.css">
-    <link rel="stylesheet" crossorigin href="/assets/news-Dsc7J6mK.css">
+    <title>News | Ssn</title>
+    <script type="module" crossorigin src="/assets/news-BsXZiLnb.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/footer-B8ZrFvtH.js">
+    <link rel="stylesheet" crossorigin href="/assets/footer-DFvpp__p.css">
+    <link rel="stylesheet" crossorigin href="/assets/news-Bd6mVvrR.css">
   </head>
   <body>
     <!-- INTRO - {HEADER & HERO} -->
     <div class="intro">
       <div class="intro__content">
+        <!-- HEADER -->
         <header class="header">
           <nav class="header__content container">
             <div class="header__logo">
@@ -56,20 +56,24 @@
                   >
                 </li>
                 <li class="header__line"></li>
-                <li><a class="header__link" href="gallery.html">Gallery</a></li>
-                <li><a class="header__link" href="#news">News</a></li>
+                <li>
+                  <a class="header__link btn" href="gallery.html">Gallery</a>
+                </li>
+                <li><a class="header__link btn" href="news.html">News</a></li>
               </ul>
               <div class="header__menu-dropdown-wrapper">
                 <div
                   class="header__menu-dropdown header__menu-dropdown-admissions"
                 >
                   <ul class="header__menu-dropdown-list">
-                    <li class="header__menu-dropdown-item">Fee Structure</li>
-                    <li class="header__menu-dropdown-item">
-                      Admission crieria
+                    <li class="header__menu-dropdown-item fee-structure">
+                      <a href="" target="_blank">Fee Structure</a>
                     </li>
-                    <li class="header__menu-dropdown-item">
-                      Admission Process
+                    <li class="header__menu-dropdown-item admission-criteria">
+                      <a href="" target="_blank">Admission crieria</a>
+                    </li>
+                    <li class="header__menu-dropdown-item admission-process">
+                      <a href="" target="_blank">Admission Process</a>
                     </li>
                   </ul>
                 </div>
@@ -77,17 +81,27 @@
                   class="header__menu-dropdown header__menu-dropdown-academics"
                 >
                   <ul class="header__menu-dropdown-list">
-                    <li class="header__menu-dropdown-item">Curriculum</li>
-                    <li class="header__menu-dropdown-item">Exam schedule</li>
-                    <li class="header__menu-dropdown-item">School dress</li>
+                    <li class="header__menu-dropdown-item curriculum">
+                      <a href="" target="_blank">Curriculum</a>
+                    </li>
+                    <li class="header__menu-dropdown-item exam-schedule">
+                      <a href="" target="_blank">Exam schedule</a>
+                    </li>
+                    <li class="header__menu-dropdown-item school-dress">
+                      <a href="" target="_blank">School dress</a>
+                    </li>
+                    <li class="header__menu-dropdown-item school-facilities">
+                      <a href="" target="_blank">School facilities</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="header__menu-dropdown header__menu-dropdown-sports">
                   <ul class="header__menu-dropdown-list">
-                    <li class="header__menu-dropdown-item">List of sports</li>
-                    <li class="header__menu-dropdown-item">Coaches</li>
-                    <li class="header__menu-dropdown-item">
-                      Sports facilities
+                    <li class="header__menu-dropdown-item list-of-sports">
+                      <a href="" target="_blank">List of sports</a>
+                    </li>
+                    <li class="header__menu-dropdown-item sports-facilities">
+                      <a href="" target="_blank">Sports facilities</a>
                     </li>
                   </ul>
                 </div>
@@ -111,14 +125,15 @@
           </nav>
           <div class="header__background"></div>
         </header>
+        <!-- HERO -->
         <article class="hero" style="position: absolute">
           <div class="hero__img-navigator">
-            <button class="hero__img-navigator-btn radial-btn">1</button>
-            <button class="hero__img-navigator-btn radial-btn">2</button>
-            <button class="hero__img-navigator-btn radial-btn">3</button>
+            <!-- <button class="hero__img-navigator-btn radial-btn">1</button>
+                    <button class="hero__img-navigator-btn radial-btn">2</button>
+                    <button class="hero__img-navigator-btn radial-btn">3</button> -->
           </div>
           <div class="hero__img-container">
-            <img
+            <!-- <img
               class="hero__img lazy loading"
               src="https://placehold.co/3204x2136/jpg"
               data-src="/intro/image1-min_11zon.jpg"
@@ -135,7 +150,7 @@
               src="https://placehold.co/4080x2720/jpg"
               data-src="/intro/image4-min_11zon.jpg"
               alt="a girl reading newspaper"
-            />
+            /> -->
           </div>
         </article>
         <div class="dummy__header-size-adjuster"></div>
@@ -149,52 +164,74 @@
         <span></span>
       </span>
       <ul class="mobile-nav__menu">
-        <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
         <li>
-          <a class="mobile-nav__link" href="">
-            <div>
-              <p class="mobile-nav__link-title">Admissions</p>
-              <div class="mobile-nav__dropdown-wrapper">
-                <ul class="mobile-nav__dropdown-list">
-                  <li class="mobile-nav__dropdown-item">Fee Structure</li>
-                  <li class="mobile-nav__dropdown-item">Admission crieria</li>
-                  <li class="mobile-nav__dropdown-item">Admission Process</li>
-                </ul>
-              </div>
-            </div>
-          </a>
+          <a class="mobile-nav__link close" href="index.html#about">About</a>
         </li>
-        <li>
-          <a class="mobile-nav__link" href="">
-            <div>
-              <p class="mobile-nav__link-title">Academics</p>
-              <div class="mobile-nav__dropdown-wrapper">
-                <ul class="mobile-nav__dropdown-list">
-                  <li class="mobile-nav__dropdown-item">Curriculum</li>
-                  <li class="mobile-nav__dropdown-item">Exam schedule</li>
-                  <li class="mobile-nav__dropdown-item">School dress</li>
-                </ul>
-              </div>
+        <li class="mobile-nav__link">
+          <!-- <a  href=""> -->
+          <div>
+            <p class="mobile-nav__link-title">Admissions</p>
+            <div class="mobile-nav__dropdown-wrapper">
+              <ul class="mobile-nav__dropdown-list">
+                <li class="mobile-nav__dropdown-item fee-structure">
+                  <a href="" target="_blank"> Fee Structure</a>
+                </li>
+                <li class="mobile-nav__dropdown-item admission-criteria">
+                  <a href="" target="_blank">Admission criteria</a>
+                </li>
+                <li class="mobile-nav__dropdown-item admission-process">
+                  <a href="" target="_blank">Admission Process</a>
+                </li>
+              </ul>
             </div>
-          </a>
+          </div>
+          <!-- </a> -->
         </li>
-        <li>
-          <a class="mobile-nav__link" href="">
-            <div>
-              <p class="mobile-nav__link-title">Sports</p>
-              <div class="mobile-nav__dropdown-wrapper">
-                <ul class="mobile-nav__dropdown-list">
-                  <li class="mobile-nav__dropdown-item">List of sports</li>
-                  <li class="mobile-nav__dropdown-item">Coaches</li>
-                  <li class="mobile-nav__dropdown-item">Sports facilities</li>
-                </ul>
-              </div>
+        <li class="mobile-nav__link">
+          <!-- <a  href=""> -->
+          <div>
+            <p class="mobile-nav__link-title">Academics</p>
+            <div class="mobile-nav__dropdown-wrapper">
+              <ul class="mobile-nav__dropdown-list">
+                <li class="mobile-nav__dropdown-item curriculum">
+                  <a href="" target="_blank">Curriculum</a>
+                </li>
+                <li class="mobile-nav__dropdown-item exam-schedule">
+                  <a href="" target="_blank">Exam schedule</a>
+                </li>
+                <li class="mobile-nav__dropdown-item school-dress">
+                  <a href="" target="_blank">School dress</a>
+                </li>
+                <li class="mobile-nav__dropdown-item school-facilities">
+                  <a href="" target="_blank">School facilities</a>
+                </li>
+              </ul>
             </div>
-          </a>
+          </div>
+          <!-- </a> -->
+        </li>
+        <li class="mobile-nav__link">
+          <!-- <a  href=""> -->
+          <div>
+            <p class="mobile-nav__link-title">Sports</p>
+            <div class="mobile-nav__dropdown-wrapper">
+              <ul class="mobile-nav__dropdown-list">
+                <li class="mobile-nav__dropdown-item list-of-sports">
+                  <a href="" target="_blank">List of sports</a>
+                </li>
+                <li class="mobile-nav__dropdown-item sports-facilities">
+                  <a href="" target="_blank">Sports facilities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- </a> -->
         </li>
         <li class="mobile-nav__link-line"></li>
-        <li><a class="mobile-nav__link" href="gallery.html">Gallery</a></li>
-        <li><a class="mobile-nav__link" href="#news">News</a></li>
+        <li>
+          <a class="mobile-nav__link close" href="gallery.html">Gallery</a>
+        </li>
+        <li><a class="mobile-nav__link close" href="news.html">News</a></li>
       </ul>
     </div>
     <!-- MOBILE NAVIGATION END -->
@@ -276,7 +313,7 @@
             >
               <h3 class="news__subcontent-title">Achievements</h3>
               <div class="news__subcontent">
-                <div class="news__subcontent-card">
+                <!-- <div class="news__subcontent-card">
                   <div class="news__subcontent-card-img-wrapper">
                     <img
                       class="news__subcontent-card-img lazy loading"
@@ -298,22 +335,6 @@
                           Physics Challenge Day Competition
                         </p>
                       </div>
-                      <button
-                        class="news__subcontent-card-description-view-btn"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24px"
-                          viewBox="0 -960 960 960"
-                          width="24px"
-                          fill="currentColor"
-                          class="news__subcontent-view-svg"
-                        >
-                          <path
-                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
-                          />
-                        </svg>
-                      </button>
                     </div>
                     <p class="news__subcontent-card-description-content">
                       This year 12 physics students achieve awards
@@ -451,7 +472,7 @@
                       This year 12 physics students achieve awards
                     </p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- UPCOMING EVENTS -->
@@ -460,94 +481,7 @@
               id="upcoming-events"
             >
               <h3 class="news__subcontent-title">Upcoming Events</h3>
-              <div class="news__subcontent">
-                <div class="news__subcontent-card-upcoming">
-                  <div class="news__subcontent-card-upcoming-description">
-                    <div
-                      class="news__subcontent-card-upcoming-description-preview"
-                    >
-                      <div
-                        class="news__subcontent-card-upcoming-description-title-wrapper"
-                      >
-                        <h4
-                          class="news__subcontent-card-upcoming-description-subtitle"
-                        >
-                          THURSDAY 29 MAY 2025
-                        </h4>
-                        <p
-                          class="news__subcontent-card-upcoming-description-title"
-                        >
-                          Home School Diary Competition
-                        </p>
-                      </div>
-                      <button
-                        class="news__subcontent-card-upcoming-description-view-btn"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24px"
-                          viewBox="0 -960 960 960"
-                          width="24px"
-                          fill="currentColor"
-                          class="news__subcontent-view-svg"
-                        >
-                          <path
-                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <p
-                      class="news__subcontent-card-upcoming-description-content"
-                    >
-                      Not Avaliable
-                    </p>
-                  </div>
-                </div>
-                <div class="news__subcontent-card-upcoming">
-                  <div class="news__subcontent-card-upcoming-description">
-                    <div
-                      class="news__subcontent-card-upcoming-description-preview"
-                    >
-                      <div
-                        class="news__subcontent-card-upcoming-description-title-wrapper"
-                      >
-                        <h4
-                          class="news__subcontent-card-upcoming-description-subtitle"
-                        >
-                          THURSDAY 29 MAY 2025
-                        </h4>
-                        <p
-                          class="news__subcontent-card-upcoming-description-title"
-                        >
-                          Home School Diary Competition
-                        </p>
-                      </div>
-                      <button
-                        class="news__subcontent-card-upcoming-description-view-btn"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24px"
-                          viewBox="0 -960 960 960"
-                          width="24px"
-                          fill="currentColor"
-                          class="news__subcontent-view-svg"
-                        >
-                          <path
-                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <p
-                      class="news__subcontent-card-upcoming-description-content"
-                    >
-                      Description
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <div class="news__subcontent"></div>
             </div>
             <!-- COMPETITIONS -->
             <div
@@ -556,7 +490,7 @@
             >
               <h3 class="news__subcontent-title">Competitions</h3>
               <div class="news__subcontent">
-                <div class="news__subcontent-card">
+                <!-- <div class="news__subcontent-card">
                   <div class="news__subcontent-card-img-wrapper">
                     <img
                       class="news__subcontent-card-img lazy loading"
@@ -727,7 +661,7 @@
                       Description
                     </p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- SPECIAL VISIT -->
@@ -737,7 +671,7 @@
             >
               <h3 class="news__subcontent-title">Special Visit</h3>
               <div class="news__subcontent">
-                <div class="news__subcontent-card">
+                <!-- <div class="news__subcontent-card">
                   <div class="news__subcontent-card-img-wrapper">
                     <img
                       class="news__subcontent-card-img lazy loading"
@@ -908,17 +842,17 @@
                       Description
                     </p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- OUTDOOR ACTIVITIES -->
             <div
-              class="news__subcontent-wrapper news__subcontent-wrapper-outdoorActivities"
+              class="news__subcontent-wrapper news__subcontent-wrapper-outdooractivities"
               id="outdoor-activities"
             >
               <h3 class="news__subcontent-title">Outdoor Activities</h3>
               <div class="news__subcontent">
-                <div class="news__subcontent-card">
+                <!-- <div class="news__subcontent-card">
                   <div class="news__subcontent-card-img-wrapper">
                     <img
                       class="news__subcontent-card-img lazy loading"
@@ -1089,7 +1023,7 @@
                       Description
                     </p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- VACANCIES -->
@@ -1098,51 +1032,7 @@
               id="vacancies"
             >
               <h3 class="news__subcontent-title">Vacancies</h3>
-              <div class="news__subcontent">
-                <div class="news__subcontent-card">
-                  <div class="news__subcontent-card-img-wrapper">
-                    <img
-                      class="news__subcontent-card-img lazy loading"
-                      src="https://placehold.co/2119x1412/jpg"
-                      data-src="news/vacancies/vacancies_11zon.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="news__subcontent-card-description">
-                    <div class="news__subcontent-card-description-preview">
-                      <div
-                        class="news__subcontent-card-description-title-wrapper"
-                      >
-                        <h4 class="news__subcontent-card-description-subtitle">
-                          THURSDAY 29 MAY 2025
-                        </h4>
-                        <p class="news__subcontent-card-description-title">
-                          Home School Diary Competition
-                        </p>
-                      </div>
-                      <button
-                        class="news__subcontent-card-description-view-btn"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24px"
-                          viewBox="0 -960 960 960"
-                          width="24px"
-                          fill="currentColor"
-                          class="news__subcontent-view-svg"
-                        >
-                          <path
-                            d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <p class="news__subcontent-card-description-content">
-                      Description
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <div class="news__subcontent"></div>
             </div>
           </div>
         </div>
@@ -1156,11 +1046,11 @@
             <a href="index.html">
               <img src="/logo/logo_6.svg" alt="Logo" class="header__logo-img" />
             </a>
-            <h3 class="footer__logo-title">Barahua Sangipur-Pratapgarh</h3>
+            <!-- <h3 class="footer__logo-title">Barahua Sangipur-Pratapgarh</h3> -->
           </div>
           <div class="footer__social-media-wrapper">
             <div class="footer__social-media footer__social-media-fb">
-              <a href=""
+              <a href="" class="facebook-link"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -1171,11 +1061,12 @@
                 >
                   <path
                     d="M 16 4 C 9.3844276 4 4 9.3844276 4 16 C 4 22.615572 9.3844276 28 16 28 C 22.615572 28 28 22.615572 28 16 C 28 9.3844276 22.615572 4 16 4 z M 16 6 C 21.534692 6 26 10.465308 26 16 C 26 21.027386 22.311682 25.161277 17.488281 25.878906 L 17.488281 18.916016 L 20.335938 18.916016 L 20.783203 16.023438 L 17.488281 16.023438 L 17.488281 14.443359 C 17.488281 13.242359 17.882859 12.175781 19.005859 12.175781 L 20.810547 12.175781 L 20.810547 9.6523438 C 20.493547 9.6093438 19.822688 9.515625 18.554688 9.515625 C 15.906688 9.515625 14.355469 10.913609 14.355469 14.099609 L 14.355469 16.023438 L 11.632812 16.023438 L 11.632812 18.916016 L 14.355469 18.916016 L 14.355469 25.853516 C 9.6088556 25.070647 6 20.973047 6 16 C 6 10.465308 10.465308 6 16 6 z"
-                  ></path></svg
-              ></a>
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div class="footer__social-media footer__social-media-ig">
-              <a href="">
+              <a href="" class="instagram-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -1186,11 +1077,12 @@
                 >
                   <path
                     d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"
-                  ></path></svg
-              ></a>
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div class="footer__social-media footer__social-media-yt">
-              <a href="">
+              <a href="" class="youtube-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -1209,32 +1101,26 @@
         </div>
         <hr class="footer__hr-line" />
         <div class="footer__body">
-          <!-- <div class="footer__map-wrapper"></div> -->
           <div class="footer__contact-section">
             <h3 class="footer__contact-section-title">Contact Us</h3>
             <div class="footer__contact-section-content">
               <p class="footer__contact-section-address">
-                7165 Burton Avenue <br />Rohnert Park, CA <br />94928
+                Barahua Sangipur, <br />Pratapgarh
               </p>
-              <div class="footer__contact-section-pn-container">
-                <p class="footer__contact-section-pn">P: 93-abc-xyz</p>
-                <p class="footer__contact-section-pn">F: 91-uvw-mno</p>
-              </div>
+              <div class="footer__contact-section-pn-container"></div>
             </div>
           </div>
           <div class="footer__quick-links">
             <ul class="footer__quick-links-list">
               <li class="footer__quick-links-item">
-                <a href=""> Family Resources</a>
+                <a href="" class="family-resources-link" target="_blank">
+                  Family Resources</a
+                >
               </li>
               <li class="footer__quick-links-item">
-                <a href=""> School Calender</a>
-              </li>
-              <li class="footer__quick-links-item">
-                <a href=""> Enrollment Information</a>
-              </li>
-              <li class="footer__quick-links-item">
-                <a href=""> School Locations Map</a>
+                <a href="" class="school-location-link" target="_blank">
+                  School Locations Map</a
+                >
               </li>
             </ul>
           </div>
