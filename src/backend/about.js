@@ -34,8 +34,9 @@ const getNSetAboutData = async () => {
         aboutItem.classList.add("about__img-wrapper");
         aboutItem.innerHTML = `<img class="about__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school" />`;
         aboutSection.appendChild(aboutItem);
+
+        resolve();
       });
-      resolve();
     });
   });
 };

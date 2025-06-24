@@ -18,18 +18,6 @@ const getNSetMsgData = async () => {
       });
     }
 
-    // async function getImgText() {
-    //   return new Promise(async (resolve, reject) => {
-    //     let { data, error } = await supabase.from("meta-data-img").select("*");
-
-    //     if (error) {
-    //       reject(error);
-    //     }
-    //     resolve(data);
-    //   });
-    // }
-    ///
-
     getData().then((imgs) => {
       let counter = 0;
       imgs.forEach((img, index) => {
@@ -46,26 +34,10 @@ const getNSetMsgData = async () => {
         msgItem.innerHTML = `<img class="message__img lazy loading" src="https://placehold.co/1000x1000/jpg" data-src="${data.publicUrl}" alt="Image of school principal" />`;
         msgSection[counter].appendChild(msgItem);
         counter++;
+        if (counter == 2) {
+          resolve();
+        }
       });
-
-      // getImgText().then((data) => {
-      //   data.forEach((row) => {
-      //     if (row.path == `msg/${img.name}`) {
-      //       const text = row.description.split("\n");
-      //       const msgWrapper = document.createElement("div");
-      //       msgWrapper.classList.add("message__content-wrapper");
-      //       msgWrapper.innerHTML = `
-      //         <p class="message__content">
-      //       <span> " </span>${text[0]} <br /> ${text[1]} <span> "</span>
-      //     </p>
-      //       `;
-      //       msgSection.appendChild(msgWrapper);
-      //       return;
-      //     }
-      //   });
-      // });
-
-      resolve();
     });
   });
 };
